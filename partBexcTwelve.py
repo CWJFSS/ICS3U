@@ -6,52 +6,41 @@ Use hamlet.txt for counting the number of punctuation marks in the file
 Use macbeth.txt for finding out the most used letter in the file"""
 import os
 import collections
-"""with open("hamlet.txt",'r') as f:
-    p=f.read()
 
-    words=p.split()
-    wordCount=len(words)
-    charCount=len(p)"""
 
-with open("hamlet",'r') as f:
+with open("illiad.txt",'r') as a:
+    message1=str(a.read())    
+with open("othello.txt",'r') as b:
+    message2=str(b.read())
+    
+with open("romeoAndJuliet.txt",'r') as c:
+    message3=str(c.read())
+    
+with open("theOdyssey.txt",'r') as d:
+    message4=str(d.read())
+
+with open("macbeth.txt",'r') as e:
+    message5=str(e.read())
+
+with open("hamlet.txt",'r') as f:
     message=str(f.read())
-
-    words=message.split()
-    wordCount=len(words)
-    charCount=len(message)
+    
+words=message4.split()
+wordCount=len(words)
+charCount=len(message2)
     
 print(wordCount)
 print(charCount)
 
-messageHigh=sum(1 for c in message if c.isupper())
+messageHigh=sum(1 for c in message1 if c.isupper())
 print("the amount of capitals is: "+str(messageHigh))
 count = lambda l1, l2: len(list(filter(lambda c: c in l2, l1)))
 
 punct = count(message, string.punctuation)
-#print((punct))
+
 
 count = lambda l1, l2: len(list(filter(lambda c: c in l2, l1)))
-print("the most common charcter ____occurs____times "+str(collections.Counter(message).most_common(1)[0]))
+print("the most common charcter ____occurs____times "+str(collections.Counter(message5).most_common(1)[0]))
 print("the vowels aeiou respectively are:")
 
-print(*map(message.lower().count, "aeiou"))
-#c:\\user\\%USER%\\Desktop\\folder\\output.txt
-#open(r'C:\hamlet.txt')
-#THIS_FOLDER = os.path.dirname(os.path.abspath(hamlet.txt))
-#my_file = os.path.join(THIS_FOLDER, 'hamlet.txt')
-"""
-with open('input.txt', 'r') as f:
-    p = f.read() # p contains contents of entire file
-    # logic to compute word counts follows here...
-
-    words = p.split()
-
-    wordCount = len(words)
-    print "The total word count is:", wordCount
-
-    # you want the top N words, so grab it as input
-    N = int(raw_input("How many words do you want?"))
-
-    c = Counter(words)
-    for w, count in c.most_common(N):
-       print w, count"""
+print(*map(message3.lower().count, "aeiou"))
