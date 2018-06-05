@@ -17,7 +17,6 @@
 import numpy
 import random
 
-# Import a library of functions called 'pygame'
 #generates a point somewhere on screen and makes a line to the closest wall
 
 import pygame
