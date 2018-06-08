@@ -8,30 +8,27 @@ The number of punctuation marks in the sentence (count ', :, ;, ., ,, !, ? only)
 The most used letter in the sentence (e.g. e : 6)
 
 
-
-VOWELS = "aeiou"
-vowels_count = len([char for char in sentence if char in VOWELS])
 """
 message = "Whatever you put here, it must always be school appropriate."
-count = lambda l1, l2: len(list(filter(lambda c: c in l2, l1)))
+co = lambda l1, l2: len(list(filter(lambda c: c in l2, l1)))
 
 #punctuation=
-punct = count(message, string.punctuation)
+punct = co(message, string.punctuation)
 #mostUsed=
 
 
 print("the most common charcter ____occurs____times "+str(collections.Counter(message).most_common(1)[0]))
 
 length=len(message)
-#vowel=*map(message.lower().count, "aeiou")
-words= int(message.count(' '))
+#vowel=*map(message.lower().co, "aeiou")
+words= int(message.co(' '))
 
 
 messageHigh=sum(1 for c in message if c.isupper())
 print("the length is: " +str (length))
 print("the amount of words are: "+str(words+1))
 print("the vowels aeiou respectively are:")
-print(*map(message.lower().count, "aeiou"))
+print(*map(message.lower().co, "aeiou"))
 print("the amount of words are: "+str((punct)))
 
 print("the amount of capitals is: "+str(messageHigh))
