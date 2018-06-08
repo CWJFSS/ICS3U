@@ -10,7 +10,7 @@ The most used letter in the sentence (e.g. e : 6)
 
 """
 message = "Whatever you put here, it must always be school appropriate."
-co = lambda l1, l2: len(list(filter(lambda c: c in l2, l1)))
+co = lambda val1, val2: len(list(filter(lambda a: a in val2, val1)))
 
 #punctuation=
 punct = co(message, string.punctuation)
@@ -24,7 +24,7 @@ length=len(message)
 words= int(message.co(' '))
 
 
-messageHigh=sum(1 for c in message if c.isupper())
+messageHigh=sum(1 for a in message if a.isupper())
 print("the length is: " +str (length))
 print("the amount of words are: "+str(words+1))
 print("the vowels aeiou respectively are:")
