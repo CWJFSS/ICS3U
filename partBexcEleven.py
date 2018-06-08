@@ -13,7 +13,7 @@ VOWELS = "aeiou"
 vowels_count = len([char for char in sentence if char in VOWELS])
 """
 message = "Whatever you put here, it must always be school appropriate."
-count = lambda l1, l2: len(list(filter(lambda c: c in l2, l1)))
+amt = lambda val1, val2: len(list(filter(lambda a: a in val2, val1)))
 
 #punctuation=
 #mostUsed=
@@ -27,7 +27,7 @@ def length():
     return (len(message))
 print(length())
 
-#vowel=*map(message.lower().count, "aeiou")
+#vowel=*map(message.lower().amt, "aeiou")
 
 
 
@@ -42,20 +42,20 @@ print(vo())
 
 
 def punctu():
-    return(count(message, string.punctuation))
+    return(amt(message, string.punctuation))
 
 print(punctu())
 
 
 def messageHigh():
 
-    return(sum(1 for c in message if c.isupper()))
+    return(sum(1 for a in message if a.isupper()))
     
 print(messageHigh())
 
 
 def words():
-    return message.count(' ')+1
+    return message.amt(' ')+1
 
 print(words())
 
