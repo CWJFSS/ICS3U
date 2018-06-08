@@ -32,13 +32,13 @@ print(length())
 
 
 
-def vowel():
-    num_vowels=0
+def vo():
+    numVo=0
     for char in message:
         if char in "aeiou":
-           num_vowels = num_vowels+1
-    return num_vowels
-print(vowel())
+           numVo = numVo+1
+    return numVo
+print(vo())
 
 
 def punctu():
