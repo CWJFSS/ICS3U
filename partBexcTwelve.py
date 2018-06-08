@@ -34,13 +34,13 @@ print(charCount)
 
 messageHigh=sum(1 for c in message1 if c.isupper())
 print("the amount of capitals is: "+str(messageHigh))
-count = lambda l1, l2: len(list(filter(lambda c: c in l2, l1)))
+amt = lambda l1, l2: len(list(filter(lambda c: c in l2, l1)))
 
-punct = count(message, string.punctuation)
+punct = amt(message, string.punctuation)
 
 
-count = lambda l1, l2: len(list(filter(lambda c: c in l2, l1)))
+amt = lambda l1, l2: len(list(filter(lambda c: c in l2, l1)))
 print("the most common charcter ____occurs____times "+str(collections.Counter(message5).most_common(1)[0]))
 print("the vowels aeiou respectively are:")
 
-print(*map(message3.lower().count, "aeiou"))
+print(*map(message3.lower().amt, "aeiou"))
