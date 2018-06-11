@@ -3,13 +3,7 @@ from math import pi
 import random
 pygame.init()
 import random
-COLORS = [(0, 0, 0), 
-          (0, 200, 0),
-          (0, 0, 200),
-          (200,200,200),
-          (200,0,200)
-          ,(200,200,0),
-         ( 200,0,0)]
+
 
 
 
