@@ -19,7 +19,7 @@ with open('database.txt', 'r') as f:
 
     #predefined function
     codify = uuid.uuid4().hex
-
+#USES A HASH FUNCTION: ONLY ENCRYPTS USING SHA WITH 24 BIT KEY. CONVERTS IT TO HEXIDECIMAL FOR ALL THE LINES IN THE PASSWORD DATABASE TEXT FILE
     hashedA=(hashlib.sha224(codify.encode() + lines[0].encode()).hexdigest() + ':' + codify)
     hashedB=(hashlib.sha224(codify.encode() + lines[1].encode()).hexdigest() + ':' + codify)
     hashedAB=(hashlib.sha224(codify.encode() + lines[2].encode()).hexdigest() + ':' + codify)
