@@ -1,6 +1,7 @@
 #Made by: Clark W
 #date: 5/27/17
 #teacher: Mr. Seidel
+#libraries
 import string
 import collections
 """The length (in characters) of the sentence (e.g. 60 characters)
@@ -15,12 +16,13 @@ The most used letter in the sentence (e.g. e : 6)
 VOWELS = "aeiou"
 vowels_count = len([char for char in sentence if char in VOWELS])
 """
+
 message = "Whatever you put here, it must always be school appropriate."
 amt = lambda val1, val2: len(list(filter(lambda a: a in val2, val1)))
 
-#punctuation=
-#mostUsed=
-
+#punctuation
+#mostUsed
+#uses different functions
 def mostcommon():
     return(collections.Counter(message).most_common(1)[0])
 print(mostcommon())
@@ -33,7 +35,7 @@ print(length())
 #vowel=*map(message.lower().amt, "aeiou")
 
 
-
+#get vowels
 
 def vo():
     numVo=0
