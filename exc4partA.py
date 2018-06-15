@@ -3,7 +3,7 @@
 #teacher: Mr. Seidel
 #uses hash function with 3 users to show assignments A and B
 #ASSINGMENT 2 First encryption method
-
+#gets needed modules
 import pygame
 from math import pi
 import random
@@ -12,7 +12,7 @@ import random
 
 
 
-
+#defined color
 WHITE = (255, 255, 255)
 BLUE =  (  0,   0, 255)
 GREEN = (  0, 255,   0)
@@ -36,16 +36,17 @@ while not done:
  
    
     clock.tick(10)
-     
+     #game loop
     for event in pygame.event.get():
         if event.type == pygame.QUIT: 
             done=True 
+        #causes it to expand 50 times per run
     radiusHoriz=1
     radiusHoriz+=50
 
     radiusVert=1
     radiusVert+=50
-
+#draws xpos and ypos increasing the positions each run
     for xpos in range(0,450,20):
       
 
@@ -56,7 +57,7 @@ while not done:
     for ypos in range(0,300,20):
         pygame.draw.circle(screen, (ypos), [200, ypos], int(ypos/5))
 
-    
+    #draws the two different circles
   
 
     pygame.display.flip()
