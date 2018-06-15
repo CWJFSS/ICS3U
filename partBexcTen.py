@@ -1,3 +1,8 @@
+#Made by: Clark W
+#date: 5/27/17
+#teacher: Mr. Seidel
+
+
 import string
 import collections
 """The length (in characters) of the sentence (e.g. 60 characters)
