@@ -1,3 +1,6 @@
+#Made by: Clark W
+#date: 5/27/17
+#teacher: Mr. Seidel
 import pygame
 pygame.init()
 screen = pygame.display.set_mode((640,480))
