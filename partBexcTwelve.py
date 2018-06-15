@@ -47,6 +47,7 @@ punct = amt(message, string.punctuation)
 
 
 amt = lambda l1, l2: len(list(filter(lambda c: c in l2, l1)))
+#gets most common
 print("the most common charcter ____occurs____times "+str(collections.Counter(message5).most_common(1)[0]))
 print("the vowels aeiou respectively are:")
 #gets all the vowels
