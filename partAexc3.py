@@ -1,3 +1,8 @@
+#Made by: Clark W
+#date: 5/27/17
+#teacher: Mr. Seidel
+
+
 import pygame
 from math import pi
 import random
