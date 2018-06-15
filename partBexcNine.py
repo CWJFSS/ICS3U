@@ -14,6 +14,9 @@
 
 #if greater, draw to starting x position 600
 #if less, set starting x position to 0
+#Made by: Clark W
+#date: 5/27/17
+#teacher: Mr. Seidel
 import numpy
 import random
 
