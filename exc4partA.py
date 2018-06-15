@@ -18,19 +18,19 @@ BLUE =  (  0,   0, 255)
 GREEN = (  0, 255,   0)
 RED =   (255,   0,   0)
 
-
+#define evertying with variables
 largeCircleXPos=200
 largeCircleYPos= 225
 bigRadius=70
 size = [400, 300]
 screen = pygame.display.set_mode(size)
-
-pygame.display.set_caption("Example code for the draw module")
+#this sets size of screen
+pygame.display.set_caption("circlesbyClarkwang")
  
 done = False
 clock = pygame.time.Clock(10)
 
-
+#game loop
  
 while not done:
  
