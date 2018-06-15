@@ -1,8 +1,6 @@
 #Made by: Clark W
 #date: 5/27/17
 #teacher: Mr. Seidel
-#uses hash function with 3 users to show assignments A and B
-#ASSINGMENT 2 First encryption method
 
 import pygame
 from math import pi
