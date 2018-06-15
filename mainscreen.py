@@ -3,21 +3,21 @@
 #teacher: Mr. Seidel
 #uses hash function with 3 users to show assignments A and B
 #ASSINGMENT 2 First encryption method
-
+#import relevant libraries
 import uuid
 import hashlib
 
-
+#open text file, specify read, set variable as f
 with open('database.txt', 'r') as f:
     content= f.readlines()
     #print(content[0])
     print (content)
-    #newstr = content[0].replace("/n", "")
+    #strip the newline
     lines = [line.rstrip('\n') for line in content]
     print (lines)
 
 
-    
+    #predefined function
     codify = uuid.uuid4().hex
 
     hashedA=(hashlib.sha224(codify.encode() + lines[0].encode()).hexdigest() + ':' + codify)
@@ -25,10 +25,10 @@ with open('database.txt', 'r') as f:
     hashedAB=(hashlib.sha224(codify.encode() + lines[2].encode()).hexdigest() + ':' + codify)
 
     input_pass=(hashlib.sha224(codify.encode() + input('Please enter a password: ').encode()).hexdigest() + ':' + codify)
-    
-    
+    #gets input
+    #checks if hashed function is equal to the user input hashed function
     if input_pass==hashedA:
-	
+	#get assignmentA
         import house
 		import arcs
 		import partAnum3
@@ -38,13 +38,14 @@ with open('database.txt', 'r') as f:
 		import assignmentApartLast
 		
     if input_pass==hashedB:
-	
+	#assignment B
 		import partBexcNine
 		import partBexcTen
 		import partBexcEleven
 		import partBexcTwelve
 		
     if input_pass==hashedAB:
+	#gets everything
         import house
 		import arcs
 		import partAnum3
@@ -58,7 +59,7 @@ with open('database.txt', 'r') as f:
 		import partBexcTwelve
     else:
         print("Your password does not exist. Please try again ")
-
+#end
     
 
 
