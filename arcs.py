@@ -1,5 +1,10 @@
+
+
+
+#import relevant libraries
 import pygame
 import sys
+#define colours
 BLACK = (0, 0, 0)
 WHITE = (255, 255, 255)
 BLUE = (0, 0, 255)
@@ -8,19 +13,21 @@ RED = (255, 0, 0)
  
 PI = 3.141592653
 pygame.init()
+#basically void setup
 size = width, height = 400, 600
 screen = pygame.display.set_mode(size)
 screen.fill(WHITE)
 
-
+#void draw 
 
 while 1:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
+            #allows user to exit
             sys.exit()
 
 
-
+#draw relevant parts 
  
         pygame.draw.arc(screen, (RED), [10,300,200,200], PI/2, 3*PI/2, 10)
 
@@ -39,6 +46,7 @@ while 1:
         pygame.draw.arc(screen, (BLUE), [80,10,250,200], 3*PI/2, PI/2, 10)
 
 
-        
+        #show
     pygame.display.flip()
+    #end if x clicked
 pygame.quit()
